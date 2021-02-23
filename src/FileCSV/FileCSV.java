@@ -12,7 +12,7 @@ public class FileCSV {
     private static final String COMA_DELIMITER = ",";
     private static final String NEW_LINE_SEPARATOR = "\n";
     private static final String PATH = "src/data/contacts.csv";
-    private static final String FILE_HEADER = "phoneBook, group, name, gender, address, email";
+    private static final String FILE_HEADER = "phoneNumber, group, name, gender, address, email";
 
     public static void writePhoneBookToFileCSV(ArrayList<PhoneBook> phoneBooks) throws IOException {
         FileWriter fw = null;
