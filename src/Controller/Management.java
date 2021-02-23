@@ -17,6 +17,7 @@ public class Management {
     }
 
     public void add(PhoneBook phoneBook) {
+        phoneBooks = FileCSV.readPhoneBooksFileCSV();
         phoneBooks.add(phoneBook);
         try {
             FileCSV.writePhoneBookToFileCSV(phoneBooks);
@@ -59,6 +60,7 @@ public class Management {
     }
 
     public PhoneBook searchByName(String name) {
+        phoneBooks = FileCSV.readPhoneBooksFileCSV();
         PhoneBook phoneBook = null;
         for (PhoneBook p : phoneBooks) {
             if (p.getName().equals(name)) {
